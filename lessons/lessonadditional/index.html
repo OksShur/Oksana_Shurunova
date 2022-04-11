@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>text-indent</title>
+    <style>
+        .colortext1 
+        {color: red;}
+    </style>
+    <style>
+        .colortext2 
+        {color: blue;}
+    </style>
+    <style>
+        .text-block 
+        {margin-left:20px;}
+    </style>
+    <style>
+        .text-block1 
+        {margin-left:110px;}
+    </style>
+    <style>
+        .text-block0 
+        {margin-left:0px;}
+    </style>
+    <style>
+        .right {text-align: right;}
+    </style>
+</head>
+<body>
+    <h1>Заголовок первого уровня</h1>
+    <h3>Предварительно форматированный текст:</h3>
+    <p>
+        x | o |<br>
+        ‐‐‐‐‐‐‐‐‐‐‐<br>
+        &nbsp&nbsp&nbsp| х |<br>
+        ‐‐‐‐‐‐‐‐‐‐‐<br>
+        o | x | o
+    </p>
+    <hr>
+    <h3>Тег address</h3>
+    <p>
+        <i>Kuprevicha, 1/1, 220141, Minsk, Belarus. Phone: +375.17.2686911</i>
+    </p>
+    <hr>
+    <h3>Семантические и функциональные строчные теги</h3>
+    <p>
+        Пожелания автора:<br>
+        <span class="colortext1"><s>Данный текст убрать из монографии</s></span> и заменить его на <span class="colortext2"><u>вновь помещённый текст</u></span>.
+    </p>
+    <h3>Работа со строчными и блоковыми цитатами</h3>
+    <p>
+        Цитата короткая:<br>
+        <i>И всё­ таки она вертится!</i>
+    </p>
+    <p>
+        Цитата занимающая несколько предложений:
+    </p>
+        <div class="text-block">
+        О сколько нам открытий чудных<br>
+        Готовят просвещенья дух<br>
+        И опыт, сын ошибок трудных,<br>
+        И гений, парадоксов друг,<br>
+        И случай, бог изобретатель...
+    </div>
+    <hr>
+    <h3>Семантические и функциональные строчные теги</h3>
+    <p>
+        <em>Тэг &lt;STRONG&gt; делает данный фрагмент текста более важным.</em> <i>Тэг &lt;em&gt; менее важным.</i><br>
+        В то время как теги &lt;b&gt; и &lt;i&gt; делают текст просто <em>полужирным</em> и <i>курсивом</i> соответственно.
+    </p>
+    <hr>
+    <h3>Теги форматирования машинного языка</h3>
+    <p>
+        При выполнении программного кода на языке PERL:
+    </p>
+    <p><code>
+        #!/usr/local/bin/perl<br>
+        print "Content‐type: text/html\n\n";<br>
+        print "&lt;H1&gt;Hello World&lt;/H1&gt;\n";<br>
+    </code></p>
+    <p>
+        Программа выведет:
+    </p>
+    <p>
+        <tt>Hello, World!</tt>
+    </p>
+    <p>
+        Однако в браузере у нас будет отображаться результат выполнения этой программы:
+    </p>
+    <h1>Hello, World!</h1>
+    <hr>
+    <h3>Комментарии и литералы(мнемоники) в HTML</h3>
+        <div 
+        class="text-block0"><tt>&lt;!‐‐ это комментарий ‐‐></tt>
+        </div>
+        <div class="text-block1">
+            <tt>
+            &lt;!‐‐ и это также комментарий,<br>
+            занимающий более одной строки ‐‐>
+            </tt>
+        </div>
+        <hr>
+    <h3>Теги над­ и подстрочных символов</h3>
+    <h4><center>Магазин работает:</center></h4>
+    <p>
+        <center>
+        c 08<u><SUP>30</SUP></u> до 18<u><SUP>30</SUP></u><br>
+        обед с 13<u><SUP>00</SUP></u> до 14<u><SUP>00</SUP></u><br>
+        выходной: <u>суббота</u>, <u>воскресенье</u>
+        </center>
+    </p>
+    <hr>
+    <h3>Вот такой текст</h3>
+    <h2>
+        Э
+        <sub>т</sub>
+        о
+        <sub>п</sub>
+        р
+        <sub>о</sub>
+        с
+        <sub>т</sub>
+        о
+        <sub>в</sub>
+        е
+        <sub>с</sub>
+        ё
+        <sub>л</sub>
+        ы
+        <sub>й</sub>
+        т
+        <sub>е</sub>
+        к
+        <sub>с</sub>
+        т
+    </h2>
+    <hr>
+    <h3>Акроним и курсив</h3>
+    <p>
+        ТФ: Y(x)=e<SUP>-­iπx</SUP>+log<sub>x</sub>4
+    </p>
+    <hr>
+    <h3>Тег small внтури абзаца</h3>
+    <p>
+        <div class="right">Создано при помощи блокнота©</div>
+    </p>
+</body>
+</html>
