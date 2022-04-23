@@ -73,7 +73,7 @@
                             <label><input type="radio" name="question" value="good" id="question_3"> хорошо</label><br>
                             <label><input type="radio" name="question" value="super" id="question_4"> супер</label><br>
                             <input type="submit" value="Отправить"><br>
-                            <em>Есть скрытое поле</em>
+                            <em>Есть скрытое поле</em><br>
                             <em>name=date_voite, value="2013.12.31"</em>
                             <input type="hidden" name="date_voite" value="2013.12.31"> 
                         </fieldset>
@@ -88,7 +88,7 @@
                         <legend>Оставьте Ваш отзыв</legend>
                             <input required type="login" id="log" name="login">
                             <label for="log"> &nbsp;&#8432; Имя</label><br>
-                            <input required type="password" id="passwd" name="password">  
+                            <input required type="email" name="login">  
                             <label for="log"> &nbsp;&#8432; e-mail</label><br>
                             <textarea name="text_area" id="ru">Форма отправки</textarea>
                             <input type="submit" value="Отправить"><br>
@@ -99,18 +99,28 @@
             </form>
             <!--шестая форма-->
             <td valign="top">
-                <p><b>Опрос(голосование):</b></p>
+                <p><b>Выпадающий и мульти списки:</b></p>
                 <form action="http://fe.it-academy.by/TestForm.php" method="post">
                         <fieldset align="left">
-                            <legend>Как вам?</legend>
-                            <label><input type="radio" name="question" value="nothing" id="question_1" checked> ничего</label><br>
-                            <label><input type="radio" name="question" value="notbad" id="question_2"> неплохо</label><br>
-                            <label><input type="radio" name="question" value="good" id="question_3"> хорошо</label><br>
-                            <label><input type="radio" name="question" value="super" id="question_4"> супер</label><br>
-                            <input type="submit" value="Отправить"><br>
-                            <em>Есть скрытое поле</em>
-                            <em>name=date_voite, value="2013.12.31"</em>
-                            <input type="hidden" name="date_voite" value="2013.12.31"> 
+                            <select name="city_0" id="city_0">
+                                <option>Брест</option>
+                            </select>
+                            <select multiple name="city_1" id="city_1">
+                                <section multiple size="10" name="city_1" id="city_1">
+                                    <optgroup label="Города РБ">
+                                        <option value="1">Минск</option>
+                                        <option value="2">Брест</option>
+                                        <option value="3">Витебск</option>
+                                  </optgroup>
+                                  <optgroup label="Города России">
+                                        <option value="4">Москва</option>
+                                        <option value="5">Рязань</option>
+                                        <option value="6">Магадан</option>
+                                  </optgroup>
+                                  <input type="submit" value="Ок"><br>
+                            </select>
+                            
+                              
                         </fieldset>
                 </form>
     </table>
