@@ -8,9 +8,10 @@
 </head>
 <body>
     <table width="700" align="left">
-    <caption style="text-align:left" valign="top"><b>Простая форма поиска с вариантами:</b></caption>    
         <tr>
-            <td>
+        <!--первая форма-->
+            <td valign="top">
+            <p><b>Простая форма поиска с вариантами:</b></p>
             <form action="http://fe.it-academy.by/TestForm.php" method="post">
                     <fieldset align="left">
                         <legend>Строка поиска</legend>
@@ -22,37 +23,96 @@
                         <label>
                                 <input type="radio" name="site" value="google" id="site_2"> в google <br>
                         </label>
-                                <input maxlength="Длина запроса не более 10 символов"><br>
-                               <em>Длина запроса не более 10 символов</em>
+                    <em>Длина запроса не более 10 символов</em>
                     </fieldset>
-                
-
             </form>
             </td>
-            <td>
-
-            </td>
-            <td>
-
-            </td>
-            <td>
-
-            </td>
+            <!--вторая форма-->
+            <td valign="top">
+                <p><b>Простая форма поиска с вариантами:</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post">
+                    <fieldset align="left">
+                        <legend>Строка поиска</legend>
+                            <input required type="text" name="website" autofocus> &#8432;&nbsp;
+                            <input type="submit" value="Искать"><br>  
+                        <label>
+                                <input type="radio" name="site" value="website" id="site_1"> на сайте
+                        </label>
+                        <label>
+                                <input type="radio" name="site" value="google" id="site_2"checked> в google <br>
+                        </label>
+                                &#8432; - <em>обязательное поле</em><br>
+                               <em>Автофокус в поле поиска</em>
+                    </fieldset>
+            </form>
         </tr>
         <tr>
-            <td>
-
-            </td>
-            <td>
-
-            </td>
-            <td>
-
-            </td>
-            <td>
-                
-            </td>
+            <!--третья форма-->
+            <td valign="top">
+            <p><b>Простая форма авторизации:</b></p>
+            <form action="http://fe.it-academy.by/TestForm.php" method="post">
+                    <fieldset align="left">
+                        <legend>Авторизируйтесь</legend>
+                            <input required type="login" id="log" name="login">
+                            <label for="log"> &nbsp;&#8432; Логин</label><br>
+                            <input required type="password" id="passwd" name="password">  
+                            <label for="log"> &nbsp;&#8432; Пароль</label><br> 
+                            <label><input type="checkbox" name="val_1" id="chbox1"> Оставаться в системе <br></label>
+                            <input type="submit" value="Войти"><br>
+                            &#8432; - <em>обязательное поле</em>
+                    </fieldset>
+            </form>
+            <!--четвертая форма-->
+            <td valign="top">
+                <p><b>Опрос(голосование):</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post">
+                        <fieldset align="left">
+                            <legend>Как вам?</legend>
+                            <label><input type="radio" name="question" value="nothing" id="question_1" checked> ничего</label><br>
+                            <label><input type="radio" name="question" value="notbad" id="question_2"> неплохо</label><br>
+                            <label><input type="radio" name="question" value="good" id="question_3"> хорошо</label><br>
+                            <label><input type="radio" name="question" value="super" id="question_4"> супер</label><br>
+                            <input type="submit" value="Отправить"><br>
+                            <em>Есть скрытое поле</em>
+                            <em>name=date_voite, value="2013.12.31"</em>
+                            <input type="hidden" name="date_voite" value="2013.12.31"> 
+                        </fieldset>
+                </form>
         </tr>
+        <tr>
+            <!--пятая форма-->
+            <td valign="top">
+            <p><b>Отзыв:</b></p>
+            <form action="http://fe.it-academy.by/TestForm.php" method="post">
+                    <fieldset align="left">
+                        <legend>Оставьте Ваш отзыв</legend>
+                            <input required type="login" id="log" name="login">
+                            <label for="log"> &nbsp;&#8432; Имя</label><br>
+                            <input required type="password" id="passwd" name="password">  
+                            <label for="log"> &nbsp;&#8432; e-mail</label><br>
+                            <textarea name="text_area" id="ru">Форма отправки</textarea>
+                            <input type="submit" value="Отправить"><br>
+                            &#8432; - <em>обязательное поле</em><br>
+                            <em>поле email - с проверкой<br>
+                                метод POST</em>
+                    </fieldset>
+            </form>
+            <!--шестая форма-->
+            <td valign="top">
+                <p><b>Опрос(голосование):</b></p>
+                <form action="http://fe.it-academy.by/TestForm.php" method="post">
+                        <fieldset align="left">
+                            <legend>Как вам?</legend>
+                            <label><input type="radio" name="question" value="nothing" id="question_1" checked> ничего</label><br>
+                            <label><input type="radio" name="question" value="notbad" id="question_2"> неплохо</label><br>
+                            <label><input type="radio" name="question" value="good" id="question_3"> хорошо</label><br>
+                            <label><input type="radio" name="question" value="super" id="question_4"> супер</label><br>
+                            <input type="submit" value="Отправить"><br>
+                            <em>Есть скрытое поле</em>
+                            <em>name=date_voite, value="2013.12.31"</em>
+                            <input type="hidden" name="date_voite" value="2013.12.31"> 
+                        </fieldset>
+                </form>
     </table>
 </body>
 </html>
