@@ -63,7 +63,7 @@
                             &#8432; - <em>обязательное поле</em>
                     </fieldset>
             </form>
-        </td>
+            </td>
             <!--четвертая форма-->
             <td valign="top">
                 <p><b>Опрос(голосование):</b></p>
@@ -82,30 +82,32 @@
                 </form>
             </td>
         </tr>
+
         <tr>
-            <!--четвертая форма-->
+            <!--пятая форма-->
             <td valign="top">
-                <p><b>Отзыв:</b></p>
-                <form action="http://fe.it-academy.by/TestForm.php" method="post">
+            <p><b>Отзыв:</b></p>
+            <form action="http://fe.it-academy.by/TestForm.php" method="post">
                     <fieldset align="left">
                         <legend>Оставьте Ваш отзыв</legend>
-                            <input required type="login" id="log" name="login">
-                            <label for="log"> &nbsp;&#8432; Имя</label><br>
-                            <input required type="email" name="login">  
-                            <label for="log"> &nbsp;&#8432; e-mail</label><br>
-                            <textarea name="text_area" id="ru">Форма отправки</textarea>
-                            <input type="submit" value="Отправить"><br>
-                            &#8432; - <em>обязательное поле</em><br>
-                            <em>поле email - с проверкой<br>
-                                метод POST</em>
+                        <input required type="login" id="log" name="login">
+                        <label for="log"> &nbsp;&#8432; Имя</label><br>
+                        <input required type="email" name="login">  
+                        <label for="log"> &nbsp;&#8432; e-mail</label><br>
+                        <textarea name="text_area" id="ru">Форма отправки</textarea>
+                        <input type="submit" value="Отправить"><br>
+                        &#8432; - <em>обязательное поле</em><br>
+                        <em>поле email - с проверкой<br>
+                        метод POST</em>
                     </fieldset>
-                </form>
+            </form>
             </td>
             <!--шестая форма-->
             <td valign="top">
                 <p><b>Выпадающий и мульти списки:</b></p>
                 <form action="http://fe.it-academy.by/TestForm.php" method="post">
                         <fieldset align="left">
+                            <legend>Города РБ</legend>
                             <select name="city_0" id="city_0">
                                 <option>Брест</option>
                             </select>
@@ -122,10 +124,13 @@
                                         <option value="6">Магадан</option>
                                   </optgroup>
                                   <input type="submit" value="Ок"><br>
-                            </select>
+                                </section>
+                            </select> 
                         </fieldset>
                 </form>
             </td>
+        </tr>
+
     </table>
 </body>
 </html>
