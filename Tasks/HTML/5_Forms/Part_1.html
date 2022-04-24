@@ -8,163 +8,170 @@
 </head>
 <body>
     <table width="700" align="left">
-        <tr>
-        <!--первая форма-->
-            <td valign="top">
+    <!--первая форма-->    
+    <tr>   
+        <td valign="top">
             <p><b>Простая форма поиска с вариантами:</b></p>
             <form action="http://fe.it-academy.by/TestForm.php" method="post">
-                    <fieldset align="left">
-                        <legend>Строка поиска</legend>
-                            <input type="text" maxlength="10" name="website">
-                            <input type="submit" value="Искать"><br>  
-                        <label>
-                                <input type="radio" name="site" value="website" id="site_1" checked> на сайте
-                        </label>
-                        <label>
-                                <input type="radio" name="site" value="google" id="site_2"> в google <br>
-                        </label>
+                <fieldset align="left">
+                    <legend>Строка поиска</legend>
+                        <input type="text" maxlength="10" name="search_1">
+                        <input type="submit" value="Искать"><br>  
+                    <label>
+                        <input type="radio" name="search_website_1" value="website" id="sw_1" checked> на сайте
+                    </label>
+                    <label>
+                        <input type="radio" name="search_google_1" value="google" id="sg_1"> в google <br>
+                    </label>
                     <em>Длина запроса не более 10 символов</em>
-                    </fieldset>
-            </form>
-            </td>
-            <!--вторая форма-->
-            <td valign="top">
-                <p><b>Простая форма поиска с вариантами:</b></p>
-                <form action="http://fe.it-academy.by/TestForm.php" method="post">
-                    <fieldset align="left">
-                        <legend>Строка поиска</legend>
-                            <input required type="text" name="website" autofocus> &#8432;&nbsp;
-                            <input type="submit" value="Искать"><br>  
-                        <label>
-                                <input type="radio" name="site" value="website" id="site_1"> на сайте
-                        </label>
-                        <label>
-                                <input type="radio" name="site" value="google" id="site_2"checked> в google <br>
-                        </label>
-                                &#8432; - <em>обязательное поле</em><br>
-                               <em>Автофокус в поле поиска</em>
-                    </fieldset>
+                </fieldset>
             </form>
         </td>
-        </tr>
-        <tr>
-            <!--третья форма-->
-            <td valign="top">
+    <!--вторая форма-->
+        <td valign="top">
+            <p><b>Простая форма поиска с вариантами:</b></p>
+            <form action="http://fe.it-academy.by/TestForm.php" method="post">
+                <fieldset align="left">
+                    <legend>Строка поиска</legend>
+                        <input required type="text" name="search_2" autofocus> &#8432;&nbsp;
+                        <input type="submit" value="Искать"><br>  
+                    <label>
+                        <input type="radio" name="search_website_2" value="website" id="sw_2"> на сайте
+                    </label>
+                    <label>
+                        <input type="radio" name="search_google_2" value="google" id="sg_2"checked> в google <br>
+                    </label>
+                    &#8432; - <em>обязательное поле</em><br>
+                    <em>Автофокус в поле поиска</em>
+                </fieldset>
+            </form>
+        </td>
+    </tr>
+    <!--третья форма-->
+    <tr>
+        <td valign="top">
             <p><b>Простая форма авторизации:</b></p>
             <form action="http://fe.it-academy.by/TestForm.php" method="post">
-                    <fieldset align="left">
-                        <legend>Авторизируйтесь</legend>
-                            <input required type="login" id="log" name="login">
-                            <label for="log"> &nbsp;&#8432; Логин</label><br>
-                            <input required type="password" id="passwd" name="password">  
-                            <label for="log"> &nbsp;&#8432; Пароль</label><br> 
-                            <label><input type="checkbox" name="val_1" id="chbox1"> Оставаться в системе <br></label>
-                            <input type="submit" value="Войти"><br>
-                            &#8432; - <em>обязательное поле</em>
-                    </fieldset>
+                <fieldset align="left">
+                    <legend>Авторизируйтесь</legend>
+                        <input required type="login" id="log_1" name="login_1">
+                    <label for="log"> &nbsp;&#8432; Логин</label><br>
+                        <input required type="password" id="passwd_1" name="password_1">  
+                    <label for="log"> &nbsp;&#8432; Пароль</label><br> 
+                    <label>
+                        <input type="checkbox" name="check_in_sys_1" id="chbox_1"> Оставаться в системе<br>
+                    </label>
+                        <input type="submit" value="Войти"><br>
+                    &#8432; - <em>обязательное поле</em>
+                </fieldset>
             </form>
-            </td>
-            <!--четвертая форма-->
-            <td valign="top">
-                <p><b>Опрос(голосование):</b></p>
-                <form action="http://fe.it-academy.by/TestForm.php" method="post">
-                        <fieldset align="left">
-                            <legend>Как вам?</legend>
-                            <label><input type="radio" name="question" value="nothing" id="question_1" checked> ничего</label><br>
-                            <label><input type="radio" name="question" value="notbad" id="question_2"> неплохо</label><br>
-                            <label><input type="radio" name="question" value="good" id="question_3"> хорошо</label><br>
-                            <label><input type="radio" name="question" value="super" id="question_4"> супер</label><br>
+        </td>
+    <!--четвертая форма-->
+        <td valign="top">
+            <p><b>Опрос(голосование):</b></p>
+            <form action="http://fe.it-academy.by/TestForm.php" method="post">
+                <fieldset align="left">
+                    <legend>Как вам?</legend>
+                        <label>
+                            <input type="radio" name="ques_1" value="nothing" id="question_1" checked> ничего<br>
+                        </label>
+                        <label>
+                            <input type="radio" name="ques_2" value="notbad" id="question_2"> неплохо<br>
+                        </label>
+                        <label>
+                            <input type="radio" name="ques_3" value="good" id="question_3"> хорошо<br>
+                        </label>
+                        <label>
+                            <input type="radio" name="ques_3" value="super" id="question_4"> супер<br>
+                        </label>
                             <input type="submit" value="Отправить"><br>
-                            <em>Есть скрытое поле</em><br>
-                            <em>name=date_voite, value="2013.12.31"</em>
-                            <input type="hidden" name="date_voite" value="2013.12.31"> 
-                        </fieldset>
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <!--пятая форма-->
-            <td valign="top">
+                    <em>Есть скрытое поле</em><br>
+                    <em>name=date_voite, value="2013.12.31"</em>
+                    <input type="hidden" name="date_voite" value="2013.12.31"> 
+                </fieldset>
+            </form>
+        </td>
+    </tr>
+    <!--пятая форма-->
+    <tr>
+        <td valign="top">
             <p><b>Отзыв:</b></p>
             <form action="http://fe.it-academy.by/TestForm.php" method="post">
-                    <fieldset align="left">
-                        <legend>Оставьте Ваш отзыв</legend>
-                        <input required type="login" id="log" name="login">
-                        <label for="log"> &nbsp;&#8432; Имя</label><br>
-                        <input required type="email" name="login">  
-                        <label for="log"> &nbsp;&#8432; e-mail</label><br>
+                <fieldset align="left">
+                    <legend>Оставьте Ваш отзыв</legend>
+                        <input required type="login" name="user_name" id="un_1">
+                    <label for="log"> &nbsp;&#8432; Имя<br></label>
+                        <input required type="email" name="user_name">  
+                    <label for="log"> &nbsp;&#8432; e-mail<br></label>
                         <textarea name="text_area" id="ru">Форма отправки</textarea>
                         <input type="submit" value="Отправить"><br>
-                        &#8432; - <em>обязательное поле</em><br>
-                        <em>поле email - с проверкой<br>
-                        метод POST</em>
-                    </fieldset>
+                    &#8432; - <em>обязательное поле</em><br>
+                    <em>поле email - с проверкой<br>
+                    метод POST</em>
+                </fieldset>
             </form>
-            </td>
-            <!--шестая форма-->
-            <td valign="top">
-                <p><b>Выпадающий и мульти списки:</b></p>
-                <form action="http://fe.it-academy.by/TestForm.php" method="post">
-                        <fieldset align="left">
-                            <legend>Города РБ</legend>
-                            <select>
-                                <option>Брест</option>
-                                <option>Минск</option>
-                            </select>
-                            <select multiple name="list[]" size="8" id="city_1">
-                                    <optgroup label="Города РБ">
-                                        <option value="1">Минск</option>
-                                        <option value="2">Брест</option>
-                                        <option value="3">Витебск</option>
-                                  </optgroup>
-                                  <optgroup label="Города России">
-                                        <option value="4">Москва</option>
-                                        <option value="5">Рязань</option>
-                                        <option value="6">Магадан</option>
-                                  </optgroup>
-                                  <input type="submit" value="Ок"><br>
-                            </select> 
-                        </fieldset>
-                </form>
-            </td>
-        </tr>
-        <tr>
-            <!--седьмая форма-->
-            <td valign="top">
+        </td>
+    <!--шестая форма-->
+        <td valign="top">
+            <p><b>Выпадающий и мульти списки:</b></p>
+            <form action="http://fe.it-academy.by/TestForm.php" method="post">
+                <fieldset align="left">
+                        <legend>Города РБ</legend>
+                    <select>
+                        <option>Брест</option>
+                        <option>Минск</option>
+                    </select>
+                    <select name="list[]" size="8" id="city_1">
+                        <optgroup label="Города РБ">
+                            <option value="1">Минск</option>
+                            <option value="2">Брест</option>
+                            <option value="3">Витебск</option>
+                        </optgroup>
+                        <optgroup label="Города России">
+                            <option value="4">Москва</option>
+                            <option value="5">Рязань</option>
+                            <option value="6">Магадан</option>
+                        </optgroup>
+                            <input type="submit" value="Ок"><br>
+                    </select> 
+                </fieldset>
+            </form>
+        </td>
+    </tr>
+    <tr>
+    <!--седьмая форма-->
+        <td valign="top">
             <p><b>Загрузка файла на сервер:</b></p>
             <form action="http://fe.it-academy.by/TestForm.php" enctype="multipart/form-data" method="post">
-                    <fieldset align="left">
-                        <legend>Upload</legend>
-                        Файл: <br>
-                        <input type="file" name="file_Field" dir="ltr"><br>
-                        Срок хранения (года):<br>
-                        <input type="text" name="years" size="3">
-                        <input type="submit" value="загрузить"><br>
-                        <em>Метод POST<br>
-                        В теге form используйте атрибут<br>
-                        enctype="multipart/form-data" для отправки<br>
-                        файла на сервер</em>
-                    </fieldset>
+                <fieldset align="left">
+                    <legend>Upload</legend>
+                    Файл: <br>
+                    <input type="file" name="file_Field" dir="ltr"><br>
+                    Срок хранения (года):<br>
+                    <input type="text" name="years" size="3">
+                    <input type="submit" value="загрузить"><br>
+                    <em>Метод POST<br>
+                    В теге form используйте атрибут<br>
+                    enctype="multipart/form-data" для отправки<br>
+                    файла на сервер</em>
+                </fieldset>
             </form>
-            </td>
-            <!--восьмая форма-->
-            <td valign="top">
-                <p><b>Валидация данных HTML5:</b></p>
-                <form action="http://fe.it-academy.by/TestForm.php" method="post">
-                        <fieldset align="left">
-                            <legend>Строка поиска</legend>
-                            <input type="text" placeholder="Только русские буквы" pattern="[А-Яа-яЁё]" name="letters"><br>
-                            <em>Телефонный номер в формате<br>
-                            +ХХХ-ХХ-ХХХХХХХ, где Х - любое число<br></em>
-                            <input type="tel" name="tele" pattern="+[0-9]{3}-[0-9]{2}-[0-9]{7}"><br>
-                            <input type="submit" value="Проверить"><br>
-
-                            
-                        </fieldset>
-                </form>
-            </td>
-        </tr>
-
-    </table>
+        </td>
+    <!--восьмая форма-->
+        <td valign="top">
+            <p><b>Валидация данных HTML5:</b></p>
+            <form action="http://fe.it-academy.by/TestForm.php" method="post">
+                <fieldset align="left">
+                    <legend>Строка поиска</legend>
+                    <input type="text" placeholder="Только русские буквы" pattern="^[А-Яа-яЁё\s]+$" name="letters"><br>
+                    <em>Телефонный номер в формате<br>
+                    +ХХХ-ХХ-ХХХХХХХ, где Х - любое число<br></em>
+                    <input type="tel" name="tele" pattern="\+([0-9]{3})-([0-9]{2})-([0-9]{7})"><br>
+                    <input type="submit" value="Проверить"><br>    
+                </fieldset>
+            </form>
+        </td>
+    </tr>
+</table>
 </body>
 </html>
