@@ -6,140 +6,109 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style media="screen">
-        .Screen 
+       body
         {
             font-family: sans-serif;
             font-size: 14px;
             background-color: #eee;
         }
-      </style>
-    <link rel="stylesheet" href="mysite.css">
-    <link rel="stylesheet" href="http://www.htmlbook.ru/main.css">
+    </style>
+    <style media="print">
+        body
+        {
+            font-family: sans-serif;
+            font-size: 14px;
+            background-color: #eee;
+        }
+    </style>
 </head>
 <body>
-    <h1>HOW-TO: Программа на Python, Часть 1</h1>
-    <img src="Icon_Python.png" title="Icon_Python" alt="blue_white_icon_python" hеight="150" width="150" align="right">
+    <h1>HOW-TO: Программа на Python, Часть 2</h1>
     <ul>    
-        <li>
-            <a href="Part_1.html"> 
-                <em>Программа на Python — часть 1</em>
-            </a>
-        </li>
-        <li>
-            <a href="Part_2.html">
-                <em>Программа на Python — часть 2</em>
-            </a>
-        </li>
-        <li>
-            <a href="Part_3.html">
-                <em>Программа на Python — часть 3</em>
-            </a>
-        </li>
+        <li><em>Программа на Python — часть 1</em></li>
+        <li><em>Программа на Python — часть 2</em></li>
+        <li><em>Программа на Python — часть 3</em></li>
     </ul>
-    <h2>
-        <a name="content">Содержание</a>
-    </h2>
-    <h3>HOW-TO: Программа на Python, Часть 1</h3>
+    <h2>Содержание</h2>
+    <h3>HOW-TO: Программа на Python, Часть 2</h3>
     <ul>    
-        <li>
-            <a href="#firstprogram">Наша первая программа</a>
-        </li>
-        <li>
-            <a href="#cycle">Пример цикла For</a>
-        </li>
+        <li><u>Списки</u></li>
+        <li><u>Комментарии</u></li>
     </ul>
+    <hr>
     <p>
-        Из множества существующих языков программирования Python — один из самых лёгких <br>
-        в изучении. Он создан в конце 80-х годов XX века, но с тех пор он сильно изменился.<br>
-        Хотя Python входит в состав большинства дистрибутивов Linux, на него часто не<br>
-        обращают внимания при выборе языка для изучения. В этой статье мы рассмотрим<br>
-        создание консольных приложений, а в следующей — программирование графических<br>
-        интерфейсов (GUI). Давайте создадим простую программу прямо сейчас.
+        В прошлом уроке мы рассмотрели простую программу, которая использовала raw_input<br>
+        для получения ответа пользователя, простые типы переменных и простой цикл «<strong>for</strong>». В<br>
+        этом уроке мы рассмотрим ещё больше типов переменных и напишем ещё больше<br>
+        программ.
     </p>
-    <h2>
-        <a name="firstprogram">Наша первая программа</a>
-    </h2>
+    <h2>Списки</h2>
     <p>
-        <a href="#content">К содержанию</a>
+        Давайте рассмотрим другой тип переменных, который называется <em>списки</em>. В других<br>
+        языках программирования они называются <em>массивами</em>. Если мы обратимся к аналогии с<br>
+        коробками для обуви, то массив (список) представляет собой несколько склеенных друг с<br>
+        другом коробок с одинаковыми вещами. Например, в одной коробке лежат вилки, в<br>
+        другой — ножи, в третьей — ложки. Посмотрим на простой список— список месяцев. Мы<br>
+        запрограммируем его так:
+    </p>
+    <p><br>
+        <small>months =<br>
+        ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']</small>
     </p>
     <p>
-        Наберём код в текстовом редакторе (например, в <strong>gedit</strong>). Потом мы разберёмся, что делает<br>
-        каждая строка и пойдём дальше.
+        Чтобы создать список, мы заключили все значения в квадратные скобки ( <strong>'['</strong> и <strong>']'</strong> ). Мы<br>
+        назвали наш список '<em>months</em>'. Чтобы использовать список, мы дадим команду print<br>
+        <strong>months[0]</strong> или <strong>months[1]</strong> (которые выведут на экран '<em>Jan</em>' или '<em>Feb</em>'). Помните: счет<br>
+        начинается с нуля. Чтобы найти длину списка, можно использовать такую функцию:<br>
     </p>
-    <p>
-        Введите эти 4 строки:
+    <p><br>
+        <small>print len (months)</small>
     </p>
-        <pre>
-<p>
-#!/usr/bin/env python
-print 'Hello. I am a python program.'
-name = raw_input("What is your name?")
-print "Hello there, " + name + "!"
-</p></pre>
      <p>
-        Это всё. Сохраните файл как <strong>hello.py</strong> в любом месте. Я предлагаю сохранить его в папке<br>
-        <strong>python_examples</strong> в домашнем каталоге. Этот пример показывает, как просто написать<br>
-        программу на Python. Для запуска программы нужно сделать её файл исполняемым. Для<br>
-        этого введите в терминале
+        которая вернёт 12.
     </p>
     <p>
-        <strong>chmod +x hello.py</strong>
+        Ещё один пример списков — категории в поваренной книге. Например...
+    </p>
+    <p><br>
+        <small>categories = ['Main dish','Meat','Fish','Soup','Cookies']</small>
     </p>
     <p>
-        в папке, в которой вы сохранили программу. Теперь запустите её.
-    </p>
-        <pre>
-<p>
-greg@earth:~/python_examples$ ./hello.py
-Hello. I am a python program.
-What is your name? Ferd Burphel
-Hello there, Ferd Burphel!
-greg@earth:~/python_examples$
-</p></pre>
+        Таким образом, в <strong>categories[0]</strong> хранится '<em>Main dish</em>', а в <strong>categories[4]</strong> — '<em>Cookies</em>'. Всё<br>
+        очень просто. Я уверен, вы сможете придумать много других примеров использования<br>
+        списков.
+    <hr class="hr-double">
+    <style>
+        .hr-double 
+        {
+	    margin: 20px 0;
+	    padding: 0;
+	    height: 1px;
+	    border: none;
+	    border-top: 1px solid #333;
+	    border-bottom: 1px solid #333;
+        }
+    </style>
+    </p>     
+    <h2>Комментарии</h2>
     <p>
-        Вот и всё.
+        Далее, мы должны обсудить комментарии. Комментарии важны по нескольким причинам.<br>
+        Они не только говорят вам или другим людям, что вы пытаетесь делать, но и напомнят<br>
+        вам через полгода, что же вы хотели сделать. Когда вы будете писать много программ,<br>
+        комментарии станут важными. Также при их помощи вы заставите Python игнорировать<br>
+        какие-либо части кода. Чтобы закомментировать строку, поставьте перед ней знак '<em>#</em>'.<br>
+        Например:
     </p>
-    <h2>
-        <a name="cycle">Пример цикла For</a>
-    </h2>
     <p>
-        <a href="#content">К содержанию</a>
+        #
     </p>
     <p>
-        Теперь давайте рассмотрим пример программирования цикла. Запустите текстовый<br>
-        редактор и наберите следующую программу:
+        Это комментарий
     </p>
-        <pre>
-<p>
-#!/usr/bin/env python
-for cntr in range(0,10):
-    print cntr
-</p></pre>
     <p>
-        <em>Не забудьте поставить символ табуляции перед строкой «print cntr».</em> Это важно. В<br>
-        Python для указания на блоки кода используются не круглые «<strong>(</strong>» и фигурные «<strong></strong>{</strong>» скобки<br>
-        как в других языках программирования, а отступы.
+        Комментарии можно вставлять в любое место в строке, но помните, что Python<br>
+        проигнорирует всё, что идёт после '<em>#</em>'.
     </p>
-    <table cellspacing="5" width="100%">
-        <tr>
-            <th>
-                <a href="#!">
-                    <img src="prev.png" title="left_button" alt="go_previous_page" align="left">
-                </a>        
-            </th>
-            <th>
-                <a href="Part_1.html">
-                    <img src="home.png" title="content_button" alt="move_to_top" align="center">
-                </a>
-            </th>
-                
-            <th>
-                <a href="Part_2.html">
-                    <img src="next.png" title="right_button" alt="go_next_page" align="right">
-                </a>
-            </th>
-                
-        </tr>
-    </table>
+</div>
 </body>
 </html>
