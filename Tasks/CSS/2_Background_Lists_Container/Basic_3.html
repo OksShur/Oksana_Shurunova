@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>text-indent</title>
+    <style>
+      .navigation_block {
+        width: 15em;
+        background: rgb(213, 193, 78);
+        float: left;
+      }
+      .article {
+        background: rgb(166, 142, 97);
+        margin-bottom: .2em;
+        float: left;
+        display:inline-block;
+        flex: auto;
+      }
+      .icon {
+        float: right;
+      }
+      .footer {
+        background: rgb(180, 158, 145);
+        clear: both;
+      }
+    </style>
+</head>
+<body>
+  <div class="navigation_block">
+<h4>Блок навигации</h4>
+    <ul>
+      <li>
+        Ширина 15em
+      </li>
+      <li>
+        Должен присутствовать цвет фона
+      </li>
+      <li>
+        Располагается слева
+      </li>
+      <li>
+        Блок навигации наполните
+        контентом достаточным,
+        чтобы по высоте он начинал
+        захватывать вторую статью, 
+        как показано в данном
+        примере 
+      </li>
+    </ul>
+  </div>  
+  <div class="article">
+      <h4>Статья 1</h4>
+      Размер блока:<br>
+      Занимает всю доступную ширину<br>
+      Должен присутствовать цвет фона<br>
+      Во всех "статьях" сделайте отступ снизу от соседей равным .2еm, при помощи свойства margin-<br>
+      bottom
+  </div>
+  <div class="article">
+      <h4>Статья 2</h4>
+      Размер блока:<br>
+      Занимает всю доступную ширину<br>
+      Должен присутствовать цвет фона<br>
+      Во всех "статьях" сделайте отступ снизу от соседей равным .2еm, при помощи свойства margin-<br>
+      bottom. Картинка вставлена при помощи тега,плавание организовано по правому краю внутри<br>
+      данной статьи для этой картинки.<br>
+    <!--<p><img src="icon_mail.png" alt="letter_icon" class="icon"></p>-->
+  </div>
+  <div class="footer">
+    Нижний блок, подвал. Занимает всю доступную ширину. Высота определяется помещённым внутрь контентом.
+   </div>
+</body>
+</html>
