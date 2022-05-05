@@ -16,41 +16,71 @@
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y, repeat-x, repeat-x;
     background-position: bottom right, bottom left, top left, top right, left, right, top, bottom;
   }
-  .frame_2 {
-    background-attachment: scroll;
-    margin-top: 3em;
-    width: 60%;
-    padding: 4em;
-    background-color: white;
-    background-image: url(frame_2/r-b.png), url(frame_2/l-b.png), url(frame_2/l-t.png), url(frame_2/r-t.png), 
-                      url(frame_2/l.png), url(frame_2/r.png), url(frame_2/t.png), url(frame_2/b.png);
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, repeat-y, repeat-y, repeat-x, repeat-x;
-    background-position: bottom right, bottom left, top left, top right, left, right, top, bottom;
-  }
-  
     </style>
 </head>
 <body>
   <div class="frame_1">
-    <p>Рисованные декоративные рамки делаются с помощью изображений, 
-      при этом предварительно рамку разбивают на ряд фрагментов, 
-      а затем выводят их в виде фонового рисунка. 
-      Этот процесс можно сильно упростить, 
-      если воспользоваться свойством border-image, 
+    Рисованные декоративные рамки делаются с помощью изображений,<br> 
+      при этом предварительно рамку разбивают на ряд фрагментов,<br>
+      а затем выводят их в виде фонового рисунка.<br> 
+      Этот процесс можно сильно упростить,<br> 
+      если воспользоваться свойством border-image,<br> 
       с его помощью легко управлять видом и настройками декоративной рамки.
-    </p>
   </div>    
-  <div class="frame_2">
-    <p>Рисованные декоративные рамки делаются с помощью изображений, 
-      при этом предварительно рамку разбивают на ряд фрагментов, 
-      а затем выводят их в виде фонового рисунка. 
-      Этот процесс можно сильно упростить, 
-      если воспользоваться свойством border-image, 
-      с его помощью легко управлять видом и настройками декоративной рамки.
-    </p>
-  </div> 
-  
-
-  </div>
+  <div style="background: 
+  			url('frame_2/l-t.png') no-repeat top left,
+  			url('frame_2/r-t.png') no-repeat top right,
+  			url('frame_2/l-b.png') no-repeat bottom left,
+  			url('frame_2/r-b.png') no-repeat bottom right,
+  			url('frame_2/l.png') repeat-y left,  
+  			url('frame_2/t.png') repeat-x top, 
+  			url('frame_2/r.png') repeat-y right, 
+  			url('frame_2/b.png') repeat-x bottom;
+        margin-top: 4em; width:80%; padding:2.5em">
+     Рисованные декоративные рамки делаются с помощью изображений,<br> 
+     при этом предварительно рамку разбивают на ряд фрагментов,<br> 
+     а затем выводят их в виде фонового рисунка.<br> 
+     Этот процесс можно сильно упростить,<br> 
+     если воспользоваться свойством border-image,<br> 
+     с его помощью легко управлять видом и настройками декоративной рамки.<br> 
+     сверстайте "резиновую" рамку всеми доступными 4-мя предложенными в примерах способами
+	</div>
+  <div style="border-style:solid; margin-top: 4em; border-width: 2.5em;  width:80%;
+    			border-image-source: url('frame_2/ramka.png') ;
+    			border-image-slice: 100;
+    			border-image-repeat: stretch; 
+    			border-image-width: 3;">
+     Рисованные декоративные рамки делаются с помощью изображений,<br> 
+     при этом предварительно рамку разбивают на ряд фрагментов,<br> 
+     а затем выводят их в виде фонового рисунка.<br> 
+     Этот процесс можно сильно упростить,<br> 
+     если воспользоваться свойством border-image,<br> 
+     с его помощью легко управлять видом и настройками декоративной рамки.<br> 
+	</div>
+    <div style="width:80%; margin-top: 4em; background: url('frame_2/l.png') repeat-y left">
+      <div style="background: url('frame_2/t.png') repeat-x top">
+        <div style="background: url('frame_2/r.png') repeat-y right">
+          <div style="background: url('frame_2/b.png') repeat-x bottom">
+            <div style="background: url('frame_2/l-t.png') no-repeat top left">
+              <div style="background: url('frame_2/r-t.png') no-repeat top right">
+                <div style="background: url('frame_2/l-b.png') no-repeat bottom left">
+                  <div style="background: url('frame_2/r-b.png') no-repeat bottom right">
+                    <div style="padding:2.5em">
+                      Рисованные декоративные рамки делаются с помощью изображений,<br> 
+                      при этом предварительно рамку разбивают на ряд фрагментов,<br> 
+                      а затем выводят их в виде фонового рисунка.<br> 
+                      Этот процесс можно сильно упростить,<br> 
+                      если воспользоваться свойством border-image,<br> 
+                      с его помощью легко управлять видом и настройками декоративной рамки.<br> 
+                      сверстайте "резиновую" рамку всеми доступными 4-мя предложенными в примерах способами
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>  
 </body>
 </html>
