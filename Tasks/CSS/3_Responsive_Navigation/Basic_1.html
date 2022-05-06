@@ -7,12 +7,22 @@
     <title>Document</title>
     <title>text-indent</title>
     <style>
-    div.MenuLevel1 { width: 100px }
+    div.MenuLevel1 { width: 100px; }
     div.MenuLevel1 > div { background-color: rgb(155, 199, 212); border: solid rgb(25, 98, 158) 1px; border-width: 2px; border-radius: 4px; position: relative; cursor: pointer}
     div.MenuLevel2 { width: 90px; display: none;}
     div.MenuLevel2 > div { background-color: rgb(167, 220, 231); border: solid rgb(55, 150, 153) 1px; border-radius: 4px; border-width: 2px; cursor: pointer}
     div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: 80%; top: 40%; z-index: 1 }
-    
+    @media screen and (min-width: 600px) {
+    div.MenuLevel1 { width: 100px; display: flex; display: grid;
+  width: 540px;
+  grid-template-columns:100px 100px 100px 100px 100px 100px;
+  align-items: start;
+  justify-content: space-between;}
+    div.MenuLevel1 > div { background-color: rgb(155, 199, 212); border: solid rgb(25, 98, 158) 1px; border-width: 2px; border-radius: 4px; position: relative; cursor: pointer}
+    div.MenuLevel2 { width: 100px; display: none;}
+    div.MenuLevel2 > div { background-color: rgb(167, 220, 231); border: solid rgb(55, 150, 153) 1px; border-radius: 4px; border-width: 2px; cursor: pointer}
+    div.MenuLevel1 > div:hover div.MenuLevel2 { display: block; position: absolute; left: -2%; top: 90%; z-index: 1 }
+    }
   </style>
 </head>
 <body>
