@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>text-indent</title>
+    <style>
+      div {
+        width: 700px;
+        border: 1px; border-style: solid;  padding: 1em; border-radius: 0px 10px 0px 10px;
+      }
+      .word, .pdf, .zip {
+        background-repeat: no-repeat; 
+        background-position: right bottom 3px; 
+        padding-right: 18px;
+      }
+      ul {
+       padding: 0; 
+        margin-left: 20px; 
+      }
+      ul li {
+        list-style-image: url(pic/logo-list.jpg); 
+      }
+      ul li a:hover {
+        background-repeat: no-repeat; 
+        background-position: right bottom 0px; 
+        padding-right: 18px;
+      }
+      .word_w:hover {
+        background-image: url(pic/logo-doc.jpg);
+      }
+      .pdf_p:hover {
+        background-image: url(pic/logo-pdf.png);
+      }
+      .zip_z:hover {
+        background-image: url(pic/logo-zip.gif);
+      }
+    </style>
+</head>
+<body>
+    <h1>Форматы файлов.</h1>
+<div>
+  .DOC или .doc 
+  (от англ. <img src="pic/extref.png"><a href="pic/logo-doc.jpg">document</a>) 
+  — расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.Расширение .DOC часто использовалось для обозначения 
+  простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой<br>
+  <a class="word" href="pic/logo-doc.jpg" style="background-image: url(pic/logo-doc.jpg)">Документ MS Word</a>
+</div>
+<div>
+Portable Document Format 
+(<img src="pic/extref.png"><a href="pic/logo-pdf.png">PDF</a>)
+ — межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка PostScript.<br>
+ <a class="pdf" href="pic/logo-pdf.png" style="background-image: url(pic/logo-pdf.png)">Документ PDF</a>
+</div>
+<div>
+ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение 
+<img src="pic/extref.png"><a href="pic/logo-zip.gif">.zip</a> 
+и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлечь путём распаковки с помощью специальной программы.<br>
+<a class="zip" href="pic/logo-zip.gif" style="background-image: url(pic/logo-zip.gif)">Архив</a>
+</div>
+<h2>Это список из файлов</h2>
+<ul>
+  <li class="doc">
+    <a class="word_w" href="pic/logo-doc.jpg">Документ MS Word</a>
+  </li>
+  <li>
+    <a class="pdf_p" href="pic/logo-pdf.png">Документ PDF</a>
+  </li>
+  <li>
+    <a class="zip_z" href="pic/logo-zip.gif">Архив</a>
+  </li>
+</ul>
+</body>
+</html>
