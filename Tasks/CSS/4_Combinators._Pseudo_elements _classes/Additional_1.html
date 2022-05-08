@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <title>text-indent</title>
+    <style>
+      div {
+        width: 700px;
+        border: 1px; border-style: solid;  padding: 1em; border-radius: 0px 10px 0px 10px;
+      }
+      li:before {
+        content: url(pic/logo-list.jpg); 
+      }
+      li {
+        list-style: none;
+      }
+      ul {
+        padding: 0; 
+        margin-left: 0px; 
+      }
+      ul li a:hover {
+        background-repeat: no-repeat; 
+        background-position: right bottom 0px; 
+        padding-right: 18px;
+      }
+      .word_w:hover {
+        background-image: url(pic/logo-doc.jpg);
+      }
+      .pdf_p:hover {
+        background-image: url(pic/logo-pdf.png);
+      }
+      .zip_z:hover {
+        background-image: url(pic/logo-zip.gif);
+      }
+      div a:first-child[href$='.jpg']::before, 
+      div a:first-child[href$='.gif']::before,
+      div a:first-child[href$='.png']::before 
+      {
+        content: url(pic/extref.png);
+      }
+      div a:last-child[href$='.jpg']::after {
+        content: url(pic/logo-doc.jpg);
+      }
+      div a:last-child[href$='.gif']::after {
+        content: url(pic/logo-pdf.png);
+      }
+      div a:last-child[href$='.png']::after {
+        content: url(pic/logo-zip.gif);
+      }
+    </style>
+</head>
+<body>
+    <h1>Форматы файлов.</h1>
+<div>
+  .DOC или .doc 
+  (от англ. <a href="pic/logo-doc.jpg">document</a>) 
+  — расширение имени файла, используемое для файлов, представляющих текст, с разметкой или без.Расширение .DOC часто использовалось для обозначения 
+  простых текстовых файлов без форматирования, однако позже стало использоваться для двоичных форматов с разметкой<br>
+  <a href="pic/logo-doc.jpg">Документ MS Word</a>
+</div>
+<div>
+Portable Document Format 
+(<a href="pic/logo-pdf.png">PDF</a>)
+ — межплатформенный формат электронных документов, разработанный фирмой Adobe Systems с использованием ряда возможностей языка PostScript.<br>
+ <a href="pic/logo-pdf.png">Документ PDF</a>
+</div>
+<div>
+ZIP — популярный формат сжатия данных и архивации файлов. Файл в этом формате обычно имеет расширение 
+<a href="pic/logo-zip.gif">.zip</a> 
+и хранит в сжатом или несжатом виде один или несколько файлов, которые можно из него извлечь путём распаковки с помощью специальной программы.<br>
+<a href="pic/logo-zip.gif">Архив</a>
+</div>
+<h2>Это список из файлов</h2>
+<ul>
+  <li class="doc">
+    <a class="word_w" href="pic/logo-doc.jpg">Документ MS Word</a>
+  </li>
+  <li>
+    <a class="pdf_p" href="pic/logo-pdf.png">Документ PDF</a>
+  </li>
+  <li>
+    <a class="zip_z" href="pic/logo-zip.gif">Архив</a>
+  </li>
+</ul>
+</body>
+</html>
